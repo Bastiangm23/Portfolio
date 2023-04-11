@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,900&display=swap');
+
+/* @supports (font-variation-settings: "wght" 450) {
+    *{
+      font-family: 'Poppins';
+      
+    }
+  } */
+  
 body{
     background-color: #252525;
 }
@@ -21,6 +30,8 @@ body{
     background-color: #0c0c0c;
     width: 100%;
     height: 15vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     
 
     display: flex;
