@@ -1,7 +1,13 @@
+body{
+    background-color: #252525;
+}
+
 .sidebar{
     border: solid 1px black;
     width: 10%;
     height: 100vh;
+
+    color: white;
 }
 
 .sidebar-inner{
@@ -12,6 +18,9 @@
 }
 
 .sidebar-header{
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 15vh;
     
 
     display: flex;
@@ -19,13 +28,41 @@
     justify-content: center;
 }
 
+.sidebar-header button{
+    background-color: #0c0c0c;
+    border-color: transparent;
+    color: white;
+    font-size: 56px;
+    width: 100%;
+    height: 100%;
+}
+
 .sidebar-menu{
+    background-color: #191919;
+    width: 100%;
+    height: 85vh;
+
+    gap: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
 
+.sidebar-menu span{
+    color: white;
+}
+
 .sidebar-menu button{
-    text-align: left;
+    height: 10%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: solid 1px gray  ;
+    border-top: solid 1px gray  ;
+    
+    text-align: center;
+}
+
+.fa-solid{
+    color: white;
 }
