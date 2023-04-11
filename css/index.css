@@ -1,0 +1,31 @@
+.sidebar{
+    border: solid 1px black;
+    width: 10%;
+    height: 100vh;
+}
+
+.sidebar-inner{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar-header{
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.sidebar-menu button{
+    text-align: left;
+}
