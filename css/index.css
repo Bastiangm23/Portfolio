@@ -114,6 +114,7 @@ body {
 .descripcion .parrafo {
   width: 100%;
   text-align: left;
+  line-height: 0px;
 }
 
 .contacto {
@@ -145,15 +146,18 @@ body {
   width: 100%;
   text-align: left;
   font-size: 16px;
+
+  display: flex;
+  justify-content: left;
 }
 
 .circulo-exterior {
   background-color: #e5e5e5;
   margin-top: 150px;
   margin-right: 100px;
-  width: 350px;
-  height: 350px;
-  border: solid 1px black;
+  width: 360px;
+  height: 360px;
+  /* border: solid 1px black; */
   border-radius: 50%;
 
   display: flex;
@@ -163,9 +167,9 @@ body {
 
 .circulo-interior {
   background-color: #cccccc;
-  width: 325px;
-  height: 325px;
-  border: solid 1px black;
+  width: 330px;
+  height: 330px;
+  /* border: solid 1px black; */
   border-radius: 50%;
 
   display: flex;
