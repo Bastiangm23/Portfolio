@@ -1,79 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,900;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* @supports (font-variation-settings: "wght" 450) {
     *{
       font-family: 'Poppins';
       
     }
   } */
-  
-body{
-    background-color: #252525;
+
+* {
+  font-family: "poppins", sans-serif;
 }
 
-.sidebar{
-    border: solid 1px black;
-    width: 10%;
-    height: 100vh;
-
-    color: white;
+body {
+  height: 100vh;
 }
 
-.sidebar-inner{
+.navbar {
+  width: 100%;
+  height: 10%;
+  /* border: solid 1px black; */
+  font-size: large;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-.sidebar-header{
-    background-color: #0c0c0c;
+.navbar-inner {
+  /* border: solid 1px blue; */
+  width: 60%;
+  height: 100%;
+}
+
+.navbar-header {
+  width: 20%;
+  height: 100%;
+  /* border: solid 1px green; */
+  float: left;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar-header > button {
+  height: 50px;
+  width: 100px;
+  font-weight: 600;
+  font-size: 50px;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+/* .navbar-header > button :hover{
+    border-bottom: solid 1px black;
+} */
+
+.navbar-menu {
+  height: 100%;
+  width: 70%;
+  /* border: solid 1px red; */
+  float: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar-menu > button {
+  margin-left: 15px;
+  height: 50px;
+  width: 150px;
+  font-weight: 600;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-menu > button :hover {
+  border-bottom: solid 1px black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.home {
+  border: solid 1px red;
+  height: 100%;
+  width: 60%;
+
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.descripcion {
+  margin-top: 100px;
+  border: solid 1px black;
+  height: 50%;
+  width: 30%;
+  font-size: 44px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.descripcion .parrafo {
+  width: 100%;
+  text-align: left;
+}
+
+.contacto{
+    border: solid 1px red;
     width: 100%;
-    height: 15vh;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
+    height: 50%;
+
+}
+
+.item-contacto{
+    width: 100%;
     
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.sidebar-header button{
-    background-color: #0c0c0c;
-    border-color: transparent;
-    color: white;
-    font-size: 56px;
+
+.item-contacto>button{
     width: 100%;
-    height: 100%;
+    text-align: left;
 }
 
-.sidebar-menu{
-    background-color: #191919;
+.item-contacto>i{
     width: 100%;
-    height: 85vh;
-
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+    float: right;
 }
 
-.sidebar-menu span{
-    color: white;
+.circulo-exterior {
+  background-color: #e5e5e5;
+  margin-top: 100px;
+  margin-right: 100px;
+  width: 350px;
+  height: 350px;
+  border: solid 1px black;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sidebar-menu button{
-    height: 10%;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom: solid 1px gray  ;
-    border-top: solid 1px gray  ;
-    
-    text-align: center;
+.circulo-interior {
+  background-color: #cccccc;
+  width: 325px;
+  height: 325px;
+  border: solid 1px black;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.fa-solid{
-    color: white;
+.foto {
+  border: solid 1px black;
+  width: 300px;
+  height: 300px;
+
+  background-image: url(/img/perfil.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
