@@ -88,7 +88,7 @@ body {
 }
 
 .home {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   height: 100%;
   width: 60%;
 
@@ -98,10 +98,10 @@ body {
 }
 
 .descripcion {
-  margin-top: 100px;
-  border: solid 1px black;
+  margin-top: 150px;
+  /* border: solid 1px black; */
   height: 50%;
-  width: 30%;
+  width: 50%;
   font-size: 44px;
 
   display: flex;
@@ -116,32 +116,40 @@ body {
   text-align: left;
 }
 
-.contacto{
-    border: solid 1px red;
-    width: 100%;
-    height: 50%;
+.contacto {
+  /* border: solid 1px red; */
+  width: 100%;
+  height: 50%;
 
+  display: flex;
+  justify-content:  top;
+  align-items: center;
+  flex-direction: column;
 }
 
-.item-contacto{
-    width: 100%;
-    
+.item-contacto {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-.item-contacto>button{
-    width: 100%;
-    text-align: left;
+.icon {
+  width: 10%;
+  float: left;
+  text-align: left;
+  margin-right: 20px;
 }
-
-.item-contacto>i{
-    width: 100%;
-    float: right;
+.span {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
 }
 
 .circulo-exterior {
   background-color: #e5e5e5;
-  margin-top: 100px;
+  margin-top: 150px;
   margin-right: 100px;
   width: 350px;
   height: 350px;
