@@ -344,7 +344,7 @@ body {
 }
 
 .skills-container {
-  border: solid 1px white;
+  /* border: solid 1px white; */
   width: 60%;
   height: 100%;
 
@@ -352,9 +352,10 @@ body {
 }
 
 .skills-tecnicas {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   width: 50%;
   height: 100%;
+  margin-top: 20%;
 
   text-align: center;
 }
@@ -377,9 +378,10 @@ body {
 }
 
 .skills-profesionales {
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
   width: 50%;
   height: 100%;
+  margin-top: 20%;
 
   text-align: center;
 }
