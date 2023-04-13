@@ -11,9 +11,18 @@ window.onscroll = function() {
 
   // Funcion para marcar el porcentaje de la barra de progreso en la seccion de skills
 
-  function porcentajeSkills(porcentaje) {
+  
     const progressBars = document.querySelectorAll(".progress-bar-inner");
 
-    console.log(progressBars.length);
+    progressBars.forEach(bar => {
+        console.log(bar);
+    });
+
+    const porcentajeSkills = document.querySelectorAll(".porcentaje-skill");
+
+    porcentajeSkills.forEach((porcentaje, i) => {
+        let porc = porcentaje.innerHTML
+        progressBars[i].style.width = porc;
+    });
     
-  }
+  
