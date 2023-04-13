@@ -335,6 +335,14 @@ body {
   justify-content: center;
 }
 
+.skill-title{
+  margin: auto;
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 .skills-container {
   border: solid 1px white;
   width: 60%;
