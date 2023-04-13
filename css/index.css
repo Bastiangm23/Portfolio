@@ -8,10 +8,12 @@
 
 * {
   font-family: "poppins", sans-serif;
+  color: white;
 }
 
 body {
   height: 100vh;
+  background-color: #100e17;
 }
 
 /* ************* Navbar ************* */
@@ -19,13 +21,20 @@ body {
 .navbar {
   width: 100%;
   height: 10%;
+  background-color: #100e17;
   /* border: solid 1px black; */
   font-size: large;
+  position: fixed;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  transition: 1s;
+}
+
+.sombra-navbar {
+  box-shadow: 10px 0px 10px 0px #d41c5c;
 }
 
 .navbar-inner {
@@ -47,7 +56,7 @@ body {
 .navbar-header > button {
   height: 50px;
   width: 100px;
-  
+
   font-weight: 600;
   font-size: 50px;
   border-color: transparent;
@@ -79,7 +88,7 @@ body {
 }
 
 .navbar-menu > button :hover {
-  border-bottom: solid 1px black;
+  border-bottom: solid 2px white;
 }
 
 /* ************* Container ************* */
@@ -95,8 +104,8 @@ body {
 
 /* ************* home ************* */
 
-.home{
-  border: solid 1px green;
+.home {
+  /* border: solid 1px green; */
   width: 100%;
   height: 100%;
 
@@ -110,7 +119,7 @@ body {
   width: 60%;
 
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -134,15 +143,19 @@ body {
   line-height: 0px;
 }
 
+/* ************* Contacto ************* */
+
 .contacto {
   /* border: solid 1px red; */
   width: 100%;
   height: 50%;
 
   display: flex;
-  justify-content:  top;
+  justify-content: top;
   align-items: center;
   flex-direction: column;
+
+  display: none;
 }
 
 .item-contacto {
@@ -169,8 +182,8 @@ body {
 }
 
 .circulo-exterior {
-  background-color: #e5e5e5;
-  margin-top: 150px;
+  background-color: #030304;
+  /* margin-top: 150px; */
   margin-right: 100px;
   width: 360px;
   height: 360px;
@@ -183,7 +196,7 @@ body {
 }
 
 .circulo-interior {
-  background-color: #cccccc;
+  background-color: #0a090f;
   width: 330px;
   height: 330px;
   /* border: solid 1px black; */
@@ -198,6 +211,7 @@ body {
   border: solid 1px black;
   width: 300px;
   height: 300px;
+  background-color: azure;
 
   background-image: url(/img/perfil.jpg);
   background-size: contain;
@@ -207,29 +221,106 @@ body {
 
 /* ************* ABOUT ME ************* */
 
-.about-me{
-  border: solid 1px blue;
+.about-me {
+  /* border: solid 1px blue; */
   width: 100%;
   height: 60%;
 
   display: flex;
   justify-content: center;
-  
 }
 
-.about-me-inner{
+.about-me-inner {
+  /* border: solid 1px black; */
   height: 100%;
   width: 60%;
 
+  margin: 0 auto;
 }
 
-.about-me-title{
+.about-me-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 100px;
+
+  display: flex;
+  gap: 50px;
+  align-items: top;
+  justify-content: center;
+}
+
+.about-me-title {
   width: 100%;
 
   text-align: center;
 }
 
-.imagenes>img{
-  width: 100px;
-  height: 100px;
+.about-me-title > h1 {
+  font-weight: 500;
+}
+
+.about-me-descripcion {
+  /* border: solid 1px red; */
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  line-height: 1.5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-me-icons{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-me-icons>.icon>i:hover{
+  color: #d41c5c;
+  transition: 0.3s;
+}
+
+.about-me-cv {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-cv > button {
+  background-color: #d41c5c;
+  border-color: transparent;
+  border-radius: 15px;
+  height: 40px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.about-me-cv > button > i {
+  margin-left: 10px;
+}
+
+.imagen {
+  /* border: solid 1px green; */
+  width: 50%;
+  height: 50%;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 10%; */
+  /* flex-direction: column; */
+}
+
+.imagen > img {
+  border-radius: 50%;
+  width: 50%;
+  height: 100%;
 }
