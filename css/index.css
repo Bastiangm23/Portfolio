@@ -494,6 +494,7 @@ body {
 
 @media (max-width: 1024px) {
   /* ************* HOME ************* */
+  
 
   .navbar {
     width: 15%;
@@ -549,7 +550,20 @@ body {
 
   .descripcion {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .descripcion .parrafo{
+    text-align: center;
+  }
+
+  .contacto{
+    gap: 10px;
+  }
+
+  .item-contacto{
+    justify-content: center;
   }
 
   .foto {
