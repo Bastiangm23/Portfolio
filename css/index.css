@@ -413,8 +413,26 @@ body {
 }
 
 .proyecto{
-  border: solid 1px red;
+  /* border: solid 1px red; */
   border-radius: 20px;
   width: 350px;
+  height: 20%;
+  margin-bottom: 40%;
+  /* box-shadow: 3px px 0px 5px #d41c5c; */
+  transition: 1s;
+}
+
+.proyecto:hover{
   height: 60%;
+  margin-bottom: 0;
+}
+
+.proyecto-imagen{
+  width: 100%;
+}
+
+.proyecto-imagen>img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
