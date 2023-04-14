@@ -293,7 +293,7 @@ body {
   justify-content: center;
 }
 
-.about-me-cv > button {
+.about-me-cv > a > button {
   background-color: #d41c5c;
   border-color: transparent;
   border-radius: 15px;
@@ -396,12 +396,13 @@ body {
 }
 
 .portafolio-container{
-  border: solid 1px white;
+
   width: 60%;
   height: 100%;
   text-align: center;
 
   display: flex;
+  align-items: top;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -410,29 +411,45 @@ body {
 .portafolio-titulo{
   width: 100%;
   height: 100px;
+
+  position: absolute;
 }
 
 .proyecto{
-  /* border: solid 1px red; */
+  /* border: solid 1px white; */
   border-radius: 20px;
   width: 350px;
-  height: 20%;
-  margin-bottom: 40%;
-  /* box-shadow: 3px px 0px 5px #d41c5c; */
+  height: 36%;
+  margin-top: 10%;
+  /* margin-bottom: 50%; */
+  box-shadow: 0px 0px 5px 0px gray;
   transition: 1s;
 }
 
-.proyecto:hover{
-  height: 60%;
-  margin-bottom: 0;
+.proyecto-imagen>a{
+  width: 100%;
+  height: 100%;
 }
 
 .proyecto-imagen{
   width: 100%;
 }
 
-.proyecto-imagen>img{
-  width: 100%;
+.proyecto-imagen>a>img{
+  width: 90%;
   height: 100%;
   border-radius: 20px;
+  transition: 0.5s;
+}
+
+.proyecto-imagen>a>img:hover{
+  transform: scale(1.05);
+  opacity: 0.5;
+  border: solid 3px #d41c5c;
+}
+
+.proyecto-descripcion{
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
