@@ -21,6 +21,3 @@ porcentajeSkills.forEach((porcentaje, i) => {
   progressBars[i].style.width = porc;
 });
 
-const sections = document.getElementsByTagName("section");
-
-console.log(sections.length);

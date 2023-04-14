@@ -20,36 +20,36 @@
       <div class="navbar-inner">
         <header class="navbar-header">
           <button>
-            <span>zBGM</span>
+            <span>BGM</span>
           </button>
         </header>
         <nav class="navbar-menu">
           <button>
             <!-- <i class="fa-solid fa-house fa-2xl"></i> -->
-            <span>Home</span>
+            <a href="#home-section"><span>Home</span></a>
           </button>
           <button>
             <!-- <i class="fa-solid fa-user fa-2xl"></i> -->
-            <span>Sobre mi</span>
+            <a href="#about-me-section"><span>Sobre mí</span></a>
           </button>
           <button>
             <!-- <i class="fa-solid fa-code fa-2xl"></i> -->
-            <span>Skills</span>
+            <a href="#skills-section"><span>Skills</span></a>
           </button>
           <button>
             <!-- <i class="fa-solid fa-code fa-2xl"></i> -->
-            <span>proyectos</span>
+            <a href="#portafolio-section"><span>Portafolio</span></a>
           </button>
-          <button>
-            <!-- <i class="fa-solid fa-phone fa-2xl"></i> -->
-            <span>Contacto</span>
-          </button>
+          <!-- <button>
+            <i class="fa-solid fa-phone fa-2xl"></i>
+            <a href=""></a><span>Contacto</span>
+          </button> -->
         </nav>
       </div>
     </div>
 
     <div class="container">
-      <section class="home">
+      <section class="home" id="home-section">
         <div class="home-inner">
           <div class="descripcion">
             <div class="parrafo">
@@ -62,36 +62,43 @@
                 <div class="icon">
                   <i class="fa-regular fa-envelope fa-2xs"></i>
                 </div>
-                <div class="span">
-                  <span>Mail</span>
+                <div class="contacto-btn">
+                  <a
+                    ><button id="btn-mail">
+                      bastian.garcia.m@gmail.com
+                    </button></a
+                  >
                 </div>
               </div>
               <div class="item-contacto">
                 <div class="icon">
                   <i class="fa-brands fa-linkedin-in fa-2xs"></i>
                 </div>
-                <div class="span">
-                  <span>Linkedin</span>
+                <div class="contacto-btn">
+                  <a
+                    href="https://cl.linkedin.com/in/bastian-garcia-67abb0119?trk=people-guest_people_search-card"
+                    target="_blank"
+                    ><button>Linkedin/BastianGarcia</button></a
+                  >
                 </div>
               </div>
               <div class="item-contacto">
                 <div class="icon">
                   <i class="fa-brands fa-github fa-2xs"></i>
                 </div>
-                <div class="span">
-                  <span>Github</span>
+                <div class="contacto-btn">
+                  <a href="https://github.com/Bastiangm23" target="_blank"
+                    ><button>github.com/Bastiangm23</button></a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="circulo-exterior">
-            <div class="circulo-interior">
-              <div class="foto"></div>
-            </div>
-          </div>
+
+          <div class="foto"></div>
         </div>
       </section>
-      <section class="about-me">
+      <section class="about-me" id="about-me-section">
         <div class="about-me-inner">
           <div class="about-me-container">
             <div class="imagen">
@@ -121,17 +128,19 @@
               </div>
 
               <div class="about-me-cv">
-                <a href="https://drive.google.com/file/d/15_jBjGncFax4ogpC1DD6436IF-ZdUoB4/view?usp=sharing" target="_blank"><button>
-                  Descargar CV
-                  <i class="fa-solid fa-download"></i>
-                </button></a>
-                
+                <a
+                  href="https://drive.google.com/file/d/15_jBjGncFax4ogpC1DD6436IF-ZdUoB4/view?usp=sharing"
+                  target="_blank"
+                  ><button>
+                    Descargar CV
+                    <i class="fa-solid fa-download"></i></button
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills-section">
         <div class="skills-container">
           <div class="skills-tecnicas">
             <h1>skills Tecnicas</h1>
@@ -213,7 +222,7 @@
           </div>
         </div>
       </section>
-      <section class="portafolio">
+      <section class="portafolio" id="portafolio-section">
         <div class="portafolio-container">
           <div class="portafolio-titulo">
             <h1>Portafolio</h1>
@@ -250,9 +259,6 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="contacto">
-        <h1>Contactame !</h1>
       </section>
     </div>
 

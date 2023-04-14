@@ -11,6 +11,12 @@
   color: white;
 }
 
+/* Para animar el movimiento de una seccion a otra  */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background-color: #100e17;
@@ -78,6 +84,10 @@ body {
   justify-content: right;
 }
 
+.navbar-menu a {
+  text-decoration: none;
+}
+
 .navbar-menu > button {
   margin-left: 15px;
   height: 50px;
@@ -95,7 +105,7 @@ body {
 
 .container {
   width: 100%;
-  height: 350%;
+  height: 390%;
 
   display: flex;
   justify-content: center;
@@ -108,6 +118,7 @@ body {
   /* border: solid 1px green; */
   width: 100%;
   height: 100%;
+  background-color: #100e17;
 
   display: flex;
   justify-content: center;
@@ -121,6 +132,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.foto {
+  border: solid 10px #d41c5c;
+  width: 400px;
+  height: 400px;
+  background-color: azure;
+
+  display: flex;
+  align-items: center;
+
+  /* background-image: url(/img/perfil.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 .descripcion {
@@ -143,7 +169,7 @@ body {
   line-height: 0px;
 }
 
-/* ************* Contacto ************* */
+/* ************* HOME/CONTACTO ************* */
 
 .contacto {
   /* border: solid 1px red; */
@@ -155,7 +181,7 @@ body {
   align-items: center;
   flex-direction: column;
 
-  display: none;
+  /* display: none; */
 }
 
 .item-contacto {
@@ -163,60 +189,27 @@ body {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+}
+
+.contacto-btn {
+  width: 75%;
+}
+
+.contacto-btn > a > button {
+  font-size: large;
+  background-color: #d41c5c;
+  border-color: transparent;
+  height: 50px;
+  border-radius: 20px;
+  width: 100%;
 }
 
 .icon {
   width: 10%;
   float: left;
+  padding-top: 10px;
   text-align: left;
-  margin-right: 20px;
-}
-.span {
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-
-  display: flex;
-  justify-content: left;
-}
-
-.circulo-exterior {
-  background-color: #030304;
-  /* margin-top: 150px; */
-  margin-right: 100px;
-  width: 360px;
-  height: 360px;
-  /* border: solid 1px black; */
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.circulo-interior {
-  background-color: #0a090f;
-  width: 330px;
-  height: 330px;
-  /* border: solid 1px black; */
-  border-radius: 50%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.foto {
-  border: solid 1px black;
-  width: 300px;
-  height: 300px;
-  background-color: azure;
-
-  /* background-image: url(/img/perfil.jpg); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 50%;
 }
 
 /* ************* ABOUT ME ************* */
@@ -224,7 +217,7 @@ body {
 .about-me {
   /* border: solid 1px blue; */
   width: 100%;
-  height: 60%;
+  height: 100%;
 
   display: flex;
   justify-content: center;
@@ -245,7 +238,7 @@ body {
 
   display: flex;
   gap: 50px;
-  align-items: top;
+  align-items: center;
   justify-content: center;
 }
 
@@ -308,7 +301,7 @@ body {
 
 .imagen {
   /* border: solid 1px green; */
-  width: 50%;
+  width: 60%;
   height: 50%;
 
   display: flex;
@@ -320,7 +313,7 @@ body {
 
 .imagen > img {
   border-radius: 50%;
-  width: 50%;
+  width: 70%;
   height: 100%;
 }
 
@@ -334,7 +327,7 @@ body {
   justify-content: center;
 }
 
-.skill-title{
+.skill-title {
   margin: auto;
   width: 90%;
 
@@ -368,7 +361,7 @@ body {
   width: 90%;
 }
 
-.progress-bar-inner{
+.progress-bar-inner {
   width: 50%;
   height: 100%;
   border-radius: 20px;
@@ -387,7 +380,7 @@ body {
 
 /* ************* PORTAFOLIO ************* */
 
-.portafolio{
+.portafolio {
   width: 100%;
   height: 100%;
 
@@ -395,8 +388,7 @@ body {
   justify-content: center;
 }
 
-.portafolio-container{
-
+.portafolio-container {
   width: 60%;
   height: 100%;
   text-align: center;
@@ -408,14 +400,15 @@ body {
   gap: 10px;
 }
 
-.portafolio-titulo{
+.portafolio-titulo {
   width: 100%;
   height: 100px;
+  padding-top: 10%;
 
-  position: absolute;
+  /* position: absolute; */
 }
 
-.proyecto{
+.proyecto {
   /* border: solid 1px white; */
   border-radius: 20px;
   width: 350px;
@@ -426,30 +419,141 @@ body {
   transition: 1s;
 }
 
-.proyecto-imagen>a{
+.proyecto-imagen > a {
   width: 100%;
   height: 100%;
 }
 
-.proyecto-imagen{
+.proyecto-imagen {
   width: 100%;
 }
 
-.proyecto-imagen>a>img{
+.proyecto-imagen > a > img {
   width: 90%;
   height: 100%;
   border-radius: 20px;
   transition: 0.5s;
 }
 
-.proyecto-imagen>a>img:hover{
+.proyecto-imagen > a > img:hover {
   transform: scale(1.05);
   opacity: 0.5;
   border: solid 3px #d41c5c;
 }
 
-.proyecto-descripcion{
+.proyecto-descripcion {
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (max-width: 1700px) {
+  /* ************* HOME ************* */
+  .home {
+    align-items: center;
+  }
+  .home-inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .descripcion {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .foto {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* ************* HOME ************* */
+
+  .home {
+    align-items: center;
+  }
+  .home-inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .descripcion {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .foto {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* ************* HOME ************* */
+
+  .navbar {
+    width: 15%;
+    height: 100%;
+    box-shadow: 0px 2px 5px 2px #d41c5c;
+
+    flex-direction: column;
+  }
+
+  .navbar-inner {
+    width: 100%;
+
+    display: flex;
+    gap: 30%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navbar-header {
+    width: 100%;
+    height: 10%;
+
+    justify-content: center;
+  }
+
+  .navbar-header > button {
+    height: 100%;
+    width: 100px;
+  
+    font-weight: 600;
+    font-size: 30px;
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-menu > button {
+    margin: 0;
+    width: 100%;
+  }
+
+  .home {
+    align-items: center;
+  }
+  .home-inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .descripcion {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .foto {
+    width: 220px;
+    height: 220px;
+  }
 }
