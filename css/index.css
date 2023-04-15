@@ -551,7 +551,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  /* ************* HOME ************* */
+  /* ************* NAVBAR ************* */
 
   .navbar {
     width: 15%;
@@ -596,6 +596,8 @@ body {
     margin: 0;
     width: 100%;
   }
+
+  /* ************* HOME ************* */
 
   .home {
     align-items: center;
@@ -676,6 +678,105 @@ body {
   }
 }
 
-@media(max-width: 768px){
-  
+@media (max-width: 768px) {
+  /* ************* NAVBAR ************* */
+
+  .navbar {
+    font-size: 14px;
+  }
+
+  /* ************* HOME ************* */
+  .home-inner {
+    width: 100%;
+  }
+
+  /* ************* ABOUT ME ************* */
+
+  .about-me-icon {
+    font-size: 10px;
+  }
+
+  /* ************* SKILLS ************* */
+  .skills-container {
+    font-size: 12px;
+  }
+
+  /* ************* PORTAFOLIO ************* */
+
+  .proyecto {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* ************* NAVBAR ************* */
+
+  .navbar {
+    font-size: 12px;
+  }
+
+  /* ************* ABOUT ME ************* */
+
+  .imagen {
+    display: none;
+  }
+
+  .about-me-descripcion {
+    width: 100%;
+    line-height: 1;
+  }
+
+  .about-me-cv > a {
+    width: 100%;
+  }
+
+  .about-me-cv > a > button {
+    width: 100%;
+  }
+
+  .about-me-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ************* SKILLS ************* */
+  .skills-container {
+    font-size: 9px;
+  }
+
+  /* ************* PORTAFOLIO ************* */
+
+  .proyecto {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* ************* NAVBAR ************* */
+  .navbar {
+    width: 10%;
+    font-size: 4px;
+  }
+
+  .navbar-header > button {
+    font-size: 13px;
+  }
+
+  /* ************* HOME ************* */
+  .home {
+    margin-left: 10%;
+    width: 90%;
+  }
+
+  .descripcion {
+    font-size: 22px;
+  }
+
+  .contacto-btn > a > button {
+    font-size: small;
+  }
+
+  /* *************  ************* */
+  /* *************  ************* */
 }
