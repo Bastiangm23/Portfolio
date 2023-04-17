@@ -39,6 +39,10 @@ body {
   transition: 1s;
 }
 
+.navbar-logo-2{
+  display: none;
+}
+
 .sombra-navbar {
   box-shadow: 10px 0px 10px 0px #d41c5c;
 }
@@ -471,7 +475,6 @@ body {
 .proyecto-descripcion {
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 /* ************* MEDIA QUERYS ************* */
@@ -714,7 +717,6 @@ body {
   .navbar {
     font-size: 12px;
   }
-
   /* ************* ABOUT ME ************* */
 
   .imagen {
@@ -755,18 +757,46 @@ body {
 @media (max-width: 480px) {
   /* ************* NAVBAR ************* */
   .navbar {
-    width: 10%;
-    font-size: 4px;
+    width: 35%;
+    opacity: 0.9;
+    
+  } 
+
+  .fa-circle-arrow-right{
+    color: #d41c5c;
+    padding-left: 20px;
   }
 
-  .navbar-header > button {
-    font-size: 13px;
+
+  .hide{
+    visibility: hidden;
   }
+
+  .display-none{
+    display: none;
+  }
+
+  /* #navbar-logo-2{
+    visibility: hidden;
+  } */
+
+  .visibility-visible{
+     display: block;
+  }
+
+  /* .navbar-header > button {
+    font-size: 13px;
+  }  */
+
+  .navbar-contraida{
+    width: 5%;
+  }
+
 
   /* ************* HOME ************* */
   .home {
-    margin-left: 10%;
-    width: 90%;
+    margin-left: 5%;
+    width: 95%;
   }
 
   .descripcion {
@@ -777,6 +807,41 @@ body {
     font-size: small;
   }
 
-  /* *************  ************* */
+  /* *************  ABOUT ME ************* */
+  .about-me{
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  /* *************  SKILLS ************* */
+  .skills{
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  .skills-container{
+    height: 75%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills-tecnicas{
+    width: 100%;
+  }
+
+  .skills-profesionales{
+    width: 100%;
+  }
+
+  /* *************  PORTAFOLIO ************* */
+  .portafolio{
+    margin-left: 5%;
+    width: 95%;
+  }
+
+
+
+
+
   /* *************  ************* */
 }

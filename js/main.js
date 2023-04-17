@@ -21,3 +21,27 @@ porcentajeSkills.forEach((porcentaje, i) => {
   progressBars[i].style.width = porc;
 });
 
+
+
+const navBarHead = document.querySelector(".navbar-header");
+const navbar = document.querySelector(".navbar");
+const navbarLogo = document.querySelector("#navbar-logo");
+const navbarLogo2 = document.querySelector(".navbar-logo-2");
+const navbarMenu = document.querySelector(".navbar-menu");
+
+function toggleNavBar() {
+  navbar.classList.toggle("navbar-contraida");
+  console.log("contraer/desplegar barra lateral");
+  navbarLogo.classList.toggle("display-none");
+  navbarLogo2.classList.toggle("visibility-visible");
+  navbarMenu.classList.toggle("hide");
+}
+
+// Funcion para hacer desplegable la barra cuando esta lateralmente
+
+navbar.addEventListener("click", () =>{
+ toggleNavBar();
+
+})
+
+
