@@ -19,7 +19,7 @@ html {
 
 body {
   height: 100vh;
-  background-color: #100e17;
+  background-color: #212121;
 }
 
 /* ************* Navbar ************* */
@@ -27,7 +27,7 @@ body {
 .navbar {
   width: 100%;
   height: 10%;
-  background-color: #100e17;
+  background-color: #212121;
   /* border: solid 1px black; */
   font-size: large;
   position: fixed;
@@ -44,7 +44,7 @@ body {
 }
 
 .sombra-navbar {
-  box-shadow: 10px 0px 10px 0px #d41c5c;
+  box-shadow: 10px 0px 10px 0px #0D7377;
 }
 
 .navbar-inner {
@@ -122,7 +122,7 @@ body {
   /* border: solid 1px green; */
   width: 100%;
   height: 100%;
-  background-color: #100e17;
+  background-color: #212121;
 
   display: flex;
   justify-content: center;
@@ -139,7 +139,7 @@ body {
 }
 
 .foto {
-  border: solid 10px #d41c5c;
+  border: solid 10px #0D7377;
   width: 400px;
   height: 400px;
   background-color: azure;
@@ -202,7 +202,7 @@ body {
 
 .contacto-btn > a > button {
   font-size: large;
-  background-color: #d41c5c;
+  background-color: #0D7377;
   border-color: transparent;
   height: 50px;
   border-radius: 20px;
@@ -285,7 +285,7 @@ body {
 }
 
 .about-me-icon > i:hover {
-  color: #d41c5c;
+  color: #0D7377;
   transition: 0.3s;
 }
 
@@ -298,7 +298,7 @@ body {
 }
 
 .about-me-cv > a > button {
-  background-color: #d41c5c;
+  background-color: #0D7377;
   border-color: transparent;
   border-radius: 15px;
   height: 40px;
@@ -375,7 +375,7 @@ body {
 .skill-progress-bar {
   border: solid 1px white;
   border-radius: 20px;
-  /* background-color: #d41c5c; */
+  /* background-color: #0D7377; */
   margin: auto;
   height: 30px;
   width: 90%;
@@ -386,7 +386,7 @@ body {
   height: 100%;
   border-radius: 20px;
 
-  background-color: #d41c5c;
+  background-color: #0D7377;
 }
 
 .skills-profesionales {
@@ -469,7 +469,7 @@ body {
 .proyecto-imagen > a > img:hover {
   transform: scale(1.05);
   opacity: 0.5;
-  border: solid 3px #d41c5c;
+  border: solid 3px #0D7377;
 }
 
 .proyecto-descripcion {
@@ -559,7 +559,7 @@ body {
   .navbar {
     width: 15%;
     height: 100%;
-    box-shadow: 0px 2px 5px 2px #d41c5c;
+    box-shadow: 0px 2px 5px 2px #0D7377;
 
     flex-direction: column;
   }
@@ -763,7 +763,7 @@ body {
   } 
 
   .fa-circle-arrow-right{
-    color: #d41c5c;
+    color: #0D7377;
     padding-left: 20px;
   }
 
